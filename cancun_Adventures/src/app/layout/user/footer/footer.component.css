@@ -1,0 +1,234 @@
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  background-color: #163145;
+  color: white;
+  height: auto;
+  font-family: Georama, sans-serif;
+  font-weight: 100;
+  padding: 1rem;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+.info {
+  text-align: end;
+  padding: 20px;
+}
+
+.social>img {
+  padding: 10px;
+}
+
+.social {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact {
+  padding: 20px;
+}
+
+.contact>img {
+  padding: 2px;
+
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.flex-container>.text {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width:1000px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #163145;
+    color: white;
+    height: auto;
+    font-family: Georama, sans-serif;
+    font-weight: 100;
+  }
+
+
+  .info {
+
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .social>img {
+    padding: 0.5rem;
+  }
+
+  .social {
+
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .contact {
+    padding: 0.5rem;
+  }
+
+  .contact>img {
+    padding: 2px;
+    text-align: start;
+
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .flex-container>.text {
+    padding: 0.5rem;
+  }
+
+  .title {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .text {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:720px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #163145;
+    color: white;
+    height: auto;
+    font-family: Georama, sans-serif;
+    font-weight: 100;
+  }
+
+
+  .info {
+    display: grid;
+    padding: 0.5rem;
+
+  }
+
+  .social>img {
+    padding: 0.5rem;
+  }
+
+  .social {
+
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .contact {
+    padding: 0.5rem;
+  }
+
+  .contact>img {
+    padding: 2px;
+    text-align: start;
+
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .flex-container>.text {
+    padding: 0.5rem;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #163145;
+    color: white;
+    height: auto;
+    font-family: Georama, sans-serif;
+    font-weight: 100;
+  }
+
+
+  .info {
+
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .social>img {
+    padding: 0.5rem;
+  }
+
+  .social {
+
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .contact {
+    padding: 0.5rem;
+  }
+
+  .contact>img {
+    padding: 2px;
+    text-align: start;
+
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .flex-container>.text {
+    padding: 0.5rem;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    color: white;
+    font-size: 1rem;
+  }
+}

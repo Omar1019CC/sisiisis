@@ -1,0 +1,216 @@
+.card {
+    background-color: rgb(255, 255, 255);
+    max-height: 400px;
+    max-width: 300px;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem;
+    display: grid;
+  }
+  
+  .h2-title {
+    color: #333333;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Georama, sans-serif;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  .flex-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    padding: 1vw;
+    margin: 5vw;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Georama', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  p {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Georama', sans-serif;
+    padding-left: 10px;
+  }
+  
+  .description-wrap {
+    width: 300px;
+  }
+  
+  .tour-small-img {
+    max-width: 300px;
+  }
+  
+  .description {
+    word-wrap: break-word;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Georama', sans-serif;
+  }
+  
+  img {
+    height: 205px;
+    width: auto;
+  }
+  
+  button {
+    background-color: #66CCA7;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Georama', sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    margin: 1rem;
+  }
+  
+  .container {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  @media screen and (max-width:1200px) {
+    .flex-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      padding: 1vw;
+      margin: 1vw;
+    }
+  
+  
+    .card {
+      background-color: rgb(255, 255, 255);
+      max-height: 400px;
+      max-width: 300px;
+      height: auto;
+      width: auto;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 2rem;
+      display: grid;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width:1010px) {
+    .flex-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      margin: 0;
+  
+  
+    }
+  
+    .card {
+      background-color: rgb(255, 255, 255);
+      max-height: 400px;
+      max-width: 300px;
+      height: auto;
+      width: auto;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10%;
+      display: grid;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width:720px) {
+    .flex-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: auto;
+  
+  
+      place-items: center;
+  
+    }
+  
+    .card {
+      background-color: rgb(255, 255, 255);
+      max-height: 700px;
+      max-width: 300px;
+      width: 300px;
+      margin: 0;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width:580px) {
+    .flex-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: auto;
+  
+  
+      margin: 0;
+  
+    }
+  
+    .card {
+      background-color: rgb(255, 255, 255);
+      max-height: 700px;
+      max-width: 300px;
+      width: 300px;
+      margin: 0;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .flex-wrap {
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: auto;
+      justify-content: center;
+  
+  
+  
+    }
+  
+    .card {
+      background-color: rgb(255, 255, 255);
+      max-height: 700px;
+      max-width: 300px;
+      width: 300px;
+      margin: 0;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.5rem;
+    }
+  }
+  

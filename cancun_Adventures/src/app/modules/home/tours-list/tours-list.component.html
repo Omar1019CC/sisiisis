@@ -1,0 +1,13 @@
+<h2 class="h2-title">Tours</h2>
+<div class="flex-wrap">
+  <div class="card" *ngFor="let tour of tours">
+    <img class="tour-small-img" [src]="'./assets/img/' + tour.img" alt="Imagen">
+    <p class="title">{{tour.name}}</p>
+    <div class="description-wrap">
+      <p class="description">{{tour.short_description}}</p>
+    </div>
+    <div class="container">
+      <button (click)="redirectToTour(tour.id)">Reservar</button>
+    </div>
+  </div>
+</div>

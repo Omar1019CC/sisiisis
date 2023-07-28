@@ -1,0 +1,49 @@
+*{
+    font-family: Georama, sans-serif;
+    text-align: center;
+   
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #3a99cf;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Georama', sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+  }
+
+  .title {
+    color: rgb(255, 255, 255);
+    font-family: 'Georama', sans-serif;
+    font-weight: 200;
+    font-size: 2.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .container{
+    background-color: rgb(0, 162, 255);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .not-found{
+    padding: 2rem;
+  }
+
+  .logo {
+    height: 3rem;
+    padding-right: 0.5rem;
+  }

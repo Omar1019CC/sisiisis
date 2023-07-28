@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500&display=swap');
+
+body{
+    background-color: #F5EDE5;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border-style: border-box;
+}
+
+.btn-custom-color{
+    color: white;
+    background-color: aqua;
+}

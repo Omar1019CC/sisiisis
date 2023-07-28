@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="content">
+    <img class="tour-img" [src]="imgUrl" alt="Imagen de Tour" />
+    <div class="tour-info" *ngIf="tour">
+        <div></div>
+        <div>
+            <h2 class="title-dark">{{tour.name}}</h2>
+            <p class="text-dark">{{tour.description}}</p>
+            <hr>
+            <h3 class="subtitle-dark">Includes</h3>
+            <p class="text-dark">{{tour.includes}}</p>
+            <hr>
+            <h3 class="subtitle-dark">Schedule</h3>
+            <p class="text-dark">{{tour.schedule}}</p>
+            <h3 class="subtitle-dark">Price</h3>
+            <p class="text-dark">${{tour.price}} USD</p>
+            <div class="center">
+                <button class="booking" (click)="addToCart()">Añadir al carrito</button>
+               
+            </div>
+        </div>
+        <div></div>
+    </div>
+</div>
+<app-footer></app-footer>

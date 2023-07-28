@@ -1,0 +1,36 @@
+image: node:18
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: 'Build and Lint'
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build --prod
+            - npm run lint
+      - step:
+          name: 'Tests'
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run test
+
+  branches:
+    master:
+      - step:
+          name: 'Deployment to Staging'
+          caches:
+            - node
+          deployment: staging
+          script:
+            - cd ./cancun_Adventures/
+            - npm install
+            - npm install -g @angular/cli@latest
+            - npm install sweetalert2
+            - ng build
+            - npm run lint
+            - npm run test

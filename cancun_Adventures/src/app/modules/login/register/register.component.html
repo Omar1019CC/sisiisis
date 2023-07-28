@@ -1,0 +1,13 @@
+<img class="background" [src]="'./assets/img/beautiful-paradise-island-with-beach-sea.jpg'" alt="background">
+<div class="container">
+    <p class="title">Regístrate</p>
+    <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+        <div class="blur-container">
+            <label class="label" for="name" >Email</label>
+            <input class="input" type="email" required formControlName="email">
+            <label class="label" for="lastname">Password</label>
+            <input class="input" type="password" required formControlName="password">
+            <input class="submit" type="submit" value="Enviar" >
+        </div>
+    </form>
+</div>

@@ -1,0 +1,98 @@
+.text-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+  
+  }
+  
+  .title-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  
+  }
+  
+  .subtitle-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  
+  .tour-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  
+  }
+  
+  .tour-img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 60vw;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .booking {
+    background-color: #66CCA7;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Georama', sans-serif;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: auto;
+    height: 3rem;
+  
+  
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .center {
+    display: grid;
+    place-items: center;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+  
+    .tour-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  
+    }
+  
+    .tour-img {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      width: 90vw;
+      height: auto;
+    }
+  
+  
+  }
+  

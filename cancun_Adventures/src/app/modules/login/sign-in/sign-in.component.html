@@ -1,0 +1,15 @@
+<img class="background" [src]="'./assets/img/beautiful-paradise-island-with-beach-sea.jpg'" alt="background">
+<div class="container">
+    <p class="title">Cancun
+        Adventures</p>
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <div class="blur-container">
+            <label class="label" for="name">Correo</label>
+            <input class="input" type="text" formControlName="email">
+            <label class="label" for="password">Contraseña</label>
+            <input class="input" type="password" formControlName="password">
+            <input class="submit" type="submit" value="Ingresar">
+        </div>
+    </form>
+    <p class="text">No tienes cuenta? <a class="link" ((keyup))="redirectRegister($event) ">Regístrate</a></p>
+</div>

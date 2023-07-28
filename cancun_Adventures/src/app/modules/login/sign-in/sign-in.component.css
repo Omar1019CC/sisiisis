@@ -1,0 +1,292 @@
+.title {
+    font-size: 5rem;
+    color: white;
+    font-family: Georama, sans-serif;
+    padding: 2rem;
+    text-align: center;
+    line-height: 5rem;
+    width: 35%;
+}
+  
+
+  
+  .blur-container {
+    background-color: rgba(223, 223, 223, 0.568);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem;
+    width: 25vw;
+    height: 35vh;
+    border-radius: 1rem;
+  
+  
+  }
+  
+  
+  
+  .label {
+    color: white;
+    font-family: Georama, sans-serif;
+    font-size: 1.5rem;
+    place-self: start;
+  
+  
+  }
+  
+  .container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  
+  }
+  
+  
+  .submit {
+    width: 60%;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #4391B1;
+    color: white;
+    border: none;
+    font-family: Georama, sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  
+    transition: transform 0.5s ease;
+  }
+  
+  .submit:hover {
+    background-color: #235fa5c9;
+    transform: scale(1.1);
+  }
+  
+  .submit:focus {
+    outline: none;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .input {
+    padding: 5px;
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-family: Georama, sans-serif;
+    border: 2px solid #949494;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: #333;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .input:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.02);
+  }
+  
+  
+  .input:focus {
+    transform: scale(1.02);
+    outline: none;
+    border-color: #279cfc;
+    box-shadow: 0 2px 8px rgba(11, 118, 206, 0.5);
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+  
+  
+  }
+  
+  
+  .text,
+  .link {
+    font-family: Georama, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.5rem
+  }
+  
+  .link {
+    display: inline-block;
+    transition: transform 0.1s ease;
+  }
+  
+  .link:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @media screen and (max-width:1200px) {
+  
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.8);
+    }
+  
+  
+    .blur-container {
+      background-color: rgba(223, 223, 223, 0.568);
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: auto;
+  
+      width: 36vw;
+      height: 35vh;
+      border-radius: 1rem;
+  
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0;
+  
+    }
+  
+  
+    .title {
+      font-size: 4rem;
+      color: white;
+      font-family: Georama, sans-serif;
+      padding: 4vh;
+      width: 40%;
+      text-align: center;
+      height: 20vh;
+      line-height: 4rem;
+    }
+  
+  
+  }
+  
+  
+  @media screen and (max-width:720px) {
+  
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.8);
+    }
+  
+  
+    .blur-container {
+      background-color: rgba(223, 223, 223, 0.568);
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: auto;
+  
+      width: 60vw;
+      height: 35vh;
+      border-radius: 1rem;
+  
+    }
+  
+    .container {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr;
+      margin: 0;
+  
+    }
+  
+    .title {
+      font-size: 4rem;
+      color: white;
+      font-family: Georama, sans-serif;
+      padding: 4vh;
+      width: 60%;
+      text-align: center;
+      height: 20vh;
+  
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.8);
+    }
+  
+    .container {
+      display: grid;
+  
+      grid-template-columns: 1fr;
+      margin-top: 10%;
+  
+  
+    }
+  
+  }
+  
+  @media screen and (max-width:480px) {
+  
+    .blur-container {
+      background-color: rgba(223, 223, 223, 0.568);
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      padding: 2rem;
+  
+      width: 75vw;
+      height: 35vh;
+      border-radius: 1rem;
+  
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 20%;
+  
+  
+    }
+  
+    .title {
+      font-size: 3.5rem;
+      color: white;
+      font-family: Georama, sans-serif;
+      padding: 1rem;
+      width: 80%;
+      text-align: center;
+      line-height: 3.5rem;
+    }
+  
+  
+  
+  }
+  

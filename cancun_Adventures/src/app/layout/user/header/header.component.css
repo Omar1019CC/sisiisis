@@ -1,0 +1,148 @@
+header {
+  background-color: rgb(0, 162, 255);
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 0.5fr;
+  padding: 1rem;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul ul {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+ul.active {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+
+
+li{
+  list-style: none;
+}
+
+.logo {
+  height: 2.3rem;
+  padding-right: 0.5rem;
+}
+
+.text {
+  color: white;
+  font-family: Georama, sans-serif;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  justify-items:start;
+  grid-template-columns: 40px 1fr;
+  justify-content: start;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-family: 'Georama', sans-serif;
+  font-weight: 200;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-color: rgb(0, 162, 255);
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 1rem;
+
+
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .text {
+    display: none;
+  }
+
+  .icon {
+    transform: scale(1.5);
+  }
+
+  .logo{
+    transform: scale(1.5);
+  }
+  .container {
+    display: grid;
+    
+    grid-template-columns: 50px 1fr;
+    padding: 10px;
+  margin: 5px;
+  align-self: center;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  header {
+    
+    background-color: rgb(0, 162, 255);
+    justify-content: space-between;
+    height: 10vh;
+   padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+
+  }
+
+  .text {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .icon {
+    transform: scale(1.5);
+  }
+  .logo{
+    transform: scale(1.5); 
+    height: 2.3rem;
+    padding-right: 0.5rem;
+  }
+
+  .container {
+    display: grid;
+    
+    grid-template-columns: 50px 1fr;
+   
+
+  }
+  .link {
+    text-decoration: none;
+    display: grid;
+    color: white;
+    margin-top: -10px;
+  }
+}

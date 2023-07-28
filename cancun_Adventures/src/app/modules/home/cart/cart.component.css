@@ -1,0 +1,477 @@
+.cart-item {
+    background-color: white;
+    display: grid;
+  
+    height: 35vh;
+  width: 95%;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+    grid-template-columns: 1fr 0.4fr 300px;
+    grid-template-rows: 25% 1fr;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .head {
+  
+    background-color: rgb(0, 162, 255);
+    grid-row: 1;
+    grid-column: 1 / 3;
+    padding-left: 0.5rem;
+    display: grid;
+    align-items: center;
+  
+  }
+  
+  
+  .info {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 0.5rem;
+  }
+  
+  .board {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr fr;
+    justify-content: center;
+    place-items: center;
+  
+  }
+  
+  .board>.title-dark {
+    grid-column: 1 / 3;
+  }
+  
+  .tour-img {
+  
+    grid-row: 1 / 3;
+    grid-column: 3;
+    background-color: black;
+  }
+  
+  .cart-img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  
+  }
+  
+  .info>p {
+    padding-top: 0.5rem;
+  }
+  
+  
+  .text-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 1rem;
+  }
+
+  .text-dark-info {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .title-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 2rem;
+  
+  
+  }
+  
+  .title-light {
+    color: rgb(243, 243, 243);
+    font-family: Georama, sans-serif;
+    font-size: 2rem;
+  
+  
+  }
+  
+  .subtitle-dark {
+    color: rgb(46, 46, 46);
+    font-family: Georama, sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  
+  
+  
+  
+  .total {
+    background-color: white;
+    width: 25vw;
+    min-height: 60vh;
+    max-height: 70vh;
+    border-radius: 1rem;
+    display: grid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+    grid-column: 2;
+    grid-row: 1/ 4;
+    position: sticky;
+    top: 4rem;
+    box-shadow: 2px 4px 6px rgba(2, 4, 8, 20);
+  
+  }
+  
+  .total>.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  
+  }
+  
+  
+  .rows {
+    display: grid;
+    grid-template-rows: auto;
+  
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+    position: relative;
+  
+  
+  
+  
+  }
+  
+  .checkout {
+    background-color: #66CCA7;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Georama', sans-serif;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  
+    height: 3rem;
+  }
+  
+  
+  .table {
+  
+    font-family: Georama, sans-serif;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 30vh;
+  
+  
+  }
+  
+  th {
+    font-family: Georama, sans-serif;
+    position: sticky;
+    font-size: 1.5rem;
+  
+  }
+  
+  .table>table {
+    width: 100%;
+  }
+  
+  td {
+    text-align: center;
+    height: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .total>.title-dark {
+    text-align: center;
+  
+  }
+  
+  .rows>.title-dark {
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+  
+    .rows {
+      display: grid;
+      grid-template-rows: auto;
+  
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      position: relative;
+      place-items: center;
+  
+    }
+  
+    .total {
+      background-color: white;
+      width: 70vw;
+      height: auto;
+      border-radius: 1rem;
+      display: grid;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      grid-column: 1;
+      grid-row: 20/ 24;
+      position: relative;
+      box-shadow: 2px 4px 6px rgba(2, 4, 8, 20);
+  
+    }
+  
+  
+    .rows:last-child {
+      grid-row: -1;
+    }
+  
+  
+    .cart-item {
+      background-color: white;
+      display: grid;
+  
+      width: auto;
+  
+      height: 35vh;
+  
+      border-radius: 1rem;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+  
+      grid-template-columns: 1fr 0.4fr minmax(300px, 1fr);
+  
+      grid-template-rows: 0.3fr 0.5fr 0.3fr;
+      overflow: hidden;
+      grid-column: 1;
+      grid-row: auto;
+      margin-bottom: 2rem;
+    }
+  
+  
+  
+  
+    .total>.container {
+      display: grid;
+      grid-template-rows: 0.5fr auto 0.2fr 0.2fr 0.5fr;
+      grid-template-columns: 1fr;
+  
+    }
+  
+    .table {
+  
+      font-family: Georama, sans-serif;
+      width: 100%;
+      height: auto;
+  
+    }
+  
+    .info {
+      grid-row: 2;
+      grid-column: 1 / 3;
+      padding: 0.5rem;
+    }
+  
+  
+  
+  
+    .board {
+      grid-row: 3;
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      justify-content: start;
+  
+  
+    }
+  
+    .board>.title-dark {
+      display: grid;
+      grid-column: 1;
+      grid-row: 1;
+  
+  
+    }
+  
+    .tour-img {
+  
+      grid-row: 2 / 5;
+      grid-column: 3;
+  
+    }
+  
+    .head {
+  
+      background-color: rgb(0, 162, 255);
+      grid-row: 1;
+      grid-column: 1 / 4;
+      padding-left: 0.5rem;
+      display: grid;
+      align-items: center;
+  
+    }
+  
+  
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 580px) {
+    .cart-item {
+      background-color: white;
+      display: grid;
+  
+      width: auto;
+  
+      height: 40vh;
+  
+      border-radius: 1rem;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+  
+      grid-template-columns: 1fr 0.4fr 250px;
+  
+      grid-template-rows: 0.3fr 0.5fr 0.3fr;
+      overflow: hidden;
+      grid-column: 1;
+      grid-row: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .rows {
+      display: grid;
+      grid-template-rows: auto;
+  
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      position: relative;
+      place-items: center;
+  
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+  
+    .rows {
+      display: grid;
+      grid-template-rows: auto;
+  
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      position: relative;
+  
+    }
+  
+    .total {
+      background-color: white;
+      width: 70vw;
+      height: auto;
+      border-radius: 1rem;
+      display: grid;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      grid-column: 1;
+      grid-row: 20/ 24;
+      position: relative;
+      box-shadow: 2px 4px 6px rgba(2, 4, 8, 20);
+  
+    }
+  
+  
+    .rows:last-child {
+      grid-row: -1;
+    }
+  
+  
+    .cart-item {
+      background-color: white;
+      display: grid;
+      width: 90vw;
+      height: auto;
+  
+      border-radius: 1rem;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 1fr 0.5fr 70px;
+      overflow: hidden;
+      grid-column: 1;
+      grid-row: auto;
+      margin-bottom: 1rem;
+    }
+  
+  
+  
+    .head {
+  
+      background-color: rgb(0, 162, 255);
+      grid-row: 1;
+      grid-column: 1;
+      padding-left: 0.5rem;
+      display: grid;
+      align-items: center;
+  
+    }
+  
+  
+    .info {
+      grid-row: 3;
+      grid-column: 1;
+      padding: 0.5rem;
+    }
+  
+    .board {
+      grid-row: 4;
+      grid-column: 1;
+      display: grid;
+      grid-template-columns: 2fr 3fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      justify-content: start;
+  
+  
+    }
+  
+    .board>.title-dark {
+      display: grid;
+      grid-column: 1;
+      grid-row: 1;
+  
+  
+    }
+  
+    .board>img {
+      display: grid;
+      grid-column: 2;
+      grid-row: 1;
+  
+    }
+  
+    .tour-img {
+  
+      grid-row: 2;
+      grid-column: 1;
+      background-color: black;
+    }
+  
+  
+    .total>.container {
+      display: grid;
+      grid-template-rows: 0.5fr auto 0.2fr 0.2fr 0.5fr;
+      grid-template-columns: 1fr;
+  
+    }
+  
+    .table {
+  
+      font-family: Georama, sans-serif;
+      width: 100%;
+      height: auto;
+  
+    }
+  
+  
+  
+  }
+  
